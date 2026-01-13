@@ -18,22 +18,38 @@ const Forschung = () => {
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-12">
             
-            <div>
-              <h2 className="text-2xl font-bold text-rub-blue mb-6 border-b border-gray-200 pb-2">Forschungsschwerpunkte</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-white p-6 rounded-lg shadow hover:shadow-md transition border-t-4 border-rub-green">
-                  <h3 className="text-xl font-bold text-rub-blue mb-3">Digitale Romanistik</h3>
-                  <p className="text-gray-600 mb-4">
-                    Einsatz digitaler Methoden in der Textanalyse und Korpuslinguistik. Entwicklung neuer Tools für die geisteswissenschaftliche Forschung.
+            <div className="mb-12">
+              <p className="text-gray-600 text-lg leading-relaxed max-w-4xl">
+                Die Forschung am Romanischen Seminar zeichnet sich durch eine breite thematische Vielfalt aus, die von der mittelalterlichen Literatur bis zur Gegenwartskultur und von der historischen Sprachwissenschaft bis zur Soziolinguistik reicht.
+              </p>
+            </div>
+
+            {/* Forschungsprojekte */}
+            <div className="mb-16">
+              <h2 className="text-2xl font-bold text-rub-blue mb-8 border-b border-gray-200 pb-2">Aktuelle Forschungsprojekte</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="bg-white p-6 rounded shadow-sm border-t-4 border-rub-blue hover:shadow-lg transition">
+                  <h3 className="text-xl font-bold text-rub-blue mb-3">Spanisch als Herkunftssprache</h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Das Projekt untersucht die Bedeutung und Praxis des Spanischunterrichts im Rahmen des Herkunftssprachlichen Unterrichts (HSU) in NRW. Ziel ist es, Studierenden und Lehrenden fundiertes Wissen über Mehrsprachigkeit zu vermitteln.
                   </p>
-                  <a href="#" className="text-rub-green font-semibold hover:underline">Mehr erfahren</a>
+                  <span className="inline-block bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Didaktik / Soziolinguistik</span>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow hover:shadow-md transition border-t-4 border-rub-blue">
-                  <h3 className="text-xl font-bold text-rub-blue mb-3">Transkulturalität</h3>
-                  <p className="text-gray-600 mb-4">
-                    Untersuchung von Kulturkontakten und Transferprozessen in der romanischsprachigen Welt, von der Frühen Neuzeit bis zur Gegenwart.
+                
+                <div className="bg-white p-6 rounded shadow-sm border-t-4 border-rub-blue hover:shadow-lg transition">
+                  <h3 className="text-xl font-bold text-rub-blue mb-3">Cálculo y error: recontando a Calderón</h3>
+                  <p className="text-gray-600 text-sm mb-4">
+                    Forschung im Rahmen des XX. Anglogermanischen Kolloquiums zu Calderón. Analyse von Rechenfehlern und Irrtümern in den Werken des spanischen Dramatikers Pedro Calderón de la Barca.
                   </p>
-                  <a href="#" className="text-rub-green font-semibold hover:underline">Mehr erfahren</a>
+                  <span className="inline-block bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Literaturwissenschaft</span>
+                </div>
+
+                <div className="bg-white p-6 rounded shadow-sm border-t-4 border-rub-blue hover:shadow-lg transition">
+                   <h3 className="text-xl font-bold text-rub-blue mb-3">Alfried-Krupp-Schülerlabor</h3>
+                   <p className="text-gray-600 text-sm mb-4">
+                     Regelmäßige Projekte an der Schnittstelle von Schule und Universität. Schülerinnen und Schüler forschen zu sprach- und literaturwissenschaftlichen Themen.
+                   </p>
+                   <span className="inline-block bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Transfer / Nachwuchsförderung</span>
                 </div>
               </div>
             </div>

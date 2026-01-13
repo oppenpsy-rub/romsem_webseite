@@ -22,7 +22,7 @@ const Studium = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Bachelor Tile */}
-            <Link to="#" className="bg-white p-6 rounded shadow-sm hover:shadow-lg transition group border-t-4 border-rub-blue flex flex-col h-full">
+            <Link to="/studium/ba" className="bg-white p-6 rounded shadow-sm hover:shadow-lg transition group border-t-4 border-rub-blue flex flex-col h-full">
               <h3 className="text-xl font-bold text-rub-blue mb-3 group-hover:text-rub-green transition">Bachelor of Arts (B.A.)</h3>
               <p className="text-gray-600 text-sm mb-4 flex-grow">
                 Der 2-Fächer-Bachelor bietet Ihnen die Möglichkeit, zwei Fächer zu kombinieren. Sie können Romanistik als eines oder beide Fächer wählen.

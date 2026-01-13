@@ -8,7 +8,7 @@ import Forschung from './pages/Forschung';
 import Kontakt from './pages/Kontakt';
 import News from './pages/News';
 import Staff from './pages/Staff';
-import International from './pages/International';
+import Internationales from './pages/Internationales';
 import StudyBA from './pages/StudyBA';
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
           <Route path="/seminar" element={<Seminar />} />
           <Route path="/personal" element={<Staff />} />
           <Route path="/forschung" element={<Forschung />} />
-          <Route path="/internationales" element={<International />} />
+          <Route path="/internationales" element={<Internationales />} />
           <Route path="/kontakt" element={<Kontakt />} />
           <Route path="/news" element={<News />} />
           <Route path="*" element={<div className="container mx-auto py-20 px-4 text-center"><h1 className="text-3xl font-bold text-rub-blue">404</h1><p className="mt-4 text-gray-600">Seite nicht gefunden.</p></div>} />

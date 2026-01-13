@@ -1,135 +1,130 @@
 import React from 'react';
-import { Book, CheckCircle, Clock, AlertCircle } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Book, FileText, CheckCircle, Download, ArrowRight } from 'lucide-react';
 
 const StudyBA = () => {
   return (
     <div className="pb-12">
       <section className="bg-rub-blue text-white py-16">
         <div className="container mx-auto px-4">
-          <div className="flex items-center gap-3 mb-4">
-            <Book className="text-rub-green" size={32} />
-            <h1 className="text-4xl font-bold">Bachelor of Arts (B.A.)</h1>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div>
+              <span className="bg-rub-green text-white text-xs font-bold px-2 py-1 rounded uppercase mb-2 inline-block">Bachelor of Arts</span>
+              <h1 className="text-4xl font-bold mb-2">2-Fächer-Bachelor</h1>
+              <p className="text-xl text-gray-200">
+                Romanische Philologie als eines von zwei Fächern studieren.
+              </p>
+            </div>
           </div>
-          <p className="text-xl text-gray-200">
-            Detaillierte Informationen zum Studienverlauf und den Modulen im Bachelor-Studiengang.
-          </p>
         </div>
       </section>
 
       <section className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           
+          {/* Main Content */}
           <div className="lg:col-span-2 space-y-12">
             
-            {/* Studienbeginn */}
-            <div className="bg-white p-8 rounded-lg shadow-sm border-t-4 border-rub-blue">
-              <h2 className="text-2xl font-bold text-rub-blue mb-4">Der Studienstart</h2>
-              <p className="text-gray-700 mb-4">
-                Das Bachelorstudium am Romanischen Seminar ist modularisiert. Für Studienanfänger (insb. WiSe 24/25 oder SoSe 25) gelten spezifische Regeln für die ersten beiden Semester.
+            <div>
+              <h2 className="text-2xl font-bold text-rub-blue mb-6 border-b border-gray-200 pb-2">Studieninhalt</h2>
+              <p className="text-gray-600 mb-4">
+                Der Bachelor-Studiengang vermittelt grundlegende Kenntnisse in der Sprach-, Literatur- und Kulturwissenschaft einer oder mehrerer romanischer Sprachen (Französisch, Italienisch, Spanisch). 
+                Er qualifiziert für Berufsfelder, in denen sprachliche und interkulturelle Kompetenzen gefragt sind, sowie für weiterführende Masterstudiengänge.
               </p>
-              
-              <div className="bg-blue-50 p-4 rounded border-l-4 border-rub-blue mb-6">
-                <h3 className="font-bold text-rub-blue mb-2 flex items-center gap-2">
-                  <AlertCircle size={18} /> Wichtig für das 1. Semester
-                </h3>
-                <p className="text-sm text-gray-700">
-                  Es müssen alle Kurse aus <strong>Modul A 1.1</strong> und <strong>Modul A 1.2</strong> belegt werden.
-                  Um im zweiten Semester weiterführende Kurse belegen zu können, müssen diese Grundlagenmodule bestanden sein!
+              <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-rub-green">
+                <h3 className="font-bold text-gray-800 mb-2">Wahlmöglichkeiten</h3>
+                <p className="text-gray-600 text-sm">
+                  Studierende können sich auf eine Sprache fokussieren oder zwei romanische Sprachen kombinieren. Der Studiengang ist modular aufgebaut und umfasst Basismodule, Aufbaumodule und Vertiefungsmodule.
                 </p>
               </div>
+            </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="border border-gray-200 rounded p-4">
-                  <h4 className="font-bold text-gray-900 mb-3 border-b pb-2">Modul A 1.1 (Fachwissenschaft)</h4>
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    <li className="flex items-start gap-2"><CheckCircle size={14} className="text-rub-green mt-1" /> Latein in der Romania</li>
-                    <li className="flex items-start gap-2"><CheckCircle size={14} className="text-rub-green mt-1" /> Einführung in die Linguistik</li>
-                    <li className="flex items-start gap-2"><CheckCircle size={14} className="text-rub-green mt-1" /> Einführung in die Literaturwissenschaft</li>
-                  </ul>
+            <div>
+              <h2 className="text-2xl font-bold text-rub-blue mb-6 border-b border-gray-200 pb-2">Modulübersicht</h2>
+              <div className="space-y-4">
+                <div className="border border-gray-200 rounded p-4 hover:border-rub-blue transition">
+                  <h3 className="font-bold text-rub-blue flex items-center gap-2">
+                    <CheckCircle size={18} className="text-rub-green" /> Basismodule
+                  </h3>
+                  <p className="text-gray-600 text-sm mt-1 ml-6">
+                    Einführung in die Sprachwissenschaft, Einführung in die Literaturwissenschaft, Sprachpraxis I & II.
+                  </p>
                 </div>
-                <div className="border border-gray-200 rounded p-4">
-                  <h4 className="font-bold text-gray-900 mb-3 border-b pb-2">Modul A 1.2 (Sprachlich-methodisch)</h4>
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    <li className="flex items-start gap-2"><CheckCircle size={14} className="text-rub-green mt-1" /> Grundbegriffe der Grammatik</li>
-                    <li className="flex items-start gap-2"><CheckCircle size={14} className="text-rub-green mt-1" /> Propädeutikum Teil A - D</li>
-                    <li className="flex items-start gap-2"><CheckCircle size={14} className="text-rub-green mt-1" /> Basiskurs Morphosyntax</li>
-                  </ul>
+                <div className="border border-gray-200 rounded p-4 hover:border-rub-blue transition">
+                  <h3 className="font-bold text-rub-blue flex items-center gap-2">
+                    <CheckCircle size={18} className="text-rub-green" /> Aufbaumodule
+                  </h3>
+                  <p className="text-gray-600 text-sm mt-1 ml-6">
+                    Vertiefung der Literatur- und Sprachgeschichte, Kulturwissenschaftliche Aspekte, Sprachpraxis III.
+                  </p>
+                </div>
+                <div className="border border-gray-200 rounded p-4 hover:border-rub-blue transition">
+                  <h3 className="font-bold text-rub-blue flex items-center gap-2">
+                    <CheckCircle size={18} className="text-rub-green" /> Optionalbereich
+                  </h3>
+                  <p className="text-gray-600 text-sm mt-1 ml-6">
+                    Praktika, weitere Fremdsprachen, interdisziplinäre Module.
+                  </p>
                 </div>
               </div>
             </div>
 
-            {/* Studienverlauf 2. Semester */}
             <div>
-              <h2 className="text-2xl font-bold text-rub-blue mb-6">Verlauf ab dem 2. Semester</h2>
-              <p className="text-gray-700 mb-4">
-                Der weitere Verlauf hängt davon ab, ob Sie Ihr zweites Fachsemester im Sommer- oder Wintersemester beginnen.
-              </p>
-
-              <div className="space-y-6">
-                <div className="bg-white p-6 rounded shadow-sm">
-                  <h3 className="font-bold text-rub-blue text-lg mb-3 flex items-center gap-2">
-                    <Clock size={18} /> Start 2. Semester im Sommer (SoSe)
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-3">Empfohlene Kurse, da Vorlesungen oft nur im SoSe angeboten werden:</p>
-                  <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-                    <li>Modul Sprache der Gegenwart – Vorlesung</li>
-                    <li>Modul Sprache der Gegenwart – 1 Proseminar</li>
-                    <li>Modul Neuere Literaturgeschichte – Vorlesung</li>
-                    <li>Modul Neuere Literaturgeschichte – 1 Proseminar</li>
-                    <li>Modul Fremdsprachenausbildung I – Morphosyntax A</li>
-                  </ul>
-                </div>
-
-                <div className="bg-white p-6 rounded shadow-sm">
-                  <h3 className="font-bold text-rub-blue text-lg mb-3 flex items-center gap-2">
-                    <Clock size={18} /> Start 2. Semester im Winter (WiSe)
-                  </h3>
-                  <p className="text-sm text-gray-600 mb-3">Empfohlene Kurse für das Wintersemester:</p>
-                  <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
-                    <li>Modul Sprachgeschichte – Vorlesung</li>
-                    <li>Modul Sprachgeschichte – 1 Proseminar</li>
-                    <li>Modul Ältere Literaturgeschichte – Vorlesung</li>
-                    <li>Modul Ältere Literaturgeschichte – 1 Proseminar</li>
-                    <li>Modul Fremdsprachenausbildung I – Morphosyntax A</li>
-                  </ul>
-                </div>
+              <h2 className="text-2xl font-bold text-rub-blue mb-6 border-b border-gray-200 pb-2">Dokumente & Downloads</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a href="#" className="flex items-center gap-3 p-4 bg-white border border-gray-200 rounded hover:bg-gray-50 transition group">
+                  <FileText className="text-gray-400 group-hover:text-rub-blue" size={24} />
+                  <div>
+                    <span className="block font-bold text-gray-700 group-hover:text-rub-blue">Prüfungsordnung (PO)</span>
+                    <span className="text-xs text-gray-500">PDF, 250 KB</span>
+                  </div>
+                  <Download className="ml-auto text-gray-300 group-hover:text-rub-green" size={18} />
+                </a>
+                <a href="#" className="flex items-center gap-3 p-4 bg-white border border-gray-200 rounded hover:bg-gray-50 transition group">
+                  <Book className="text-gray-400 group-hover:text-rub-blue" size={24} />
+                  <div>
+                    <span className="block font-bold text-gray-700 group-hover:text-rub-blue">Modulhandbuch</span>
+                    <span className="text-xs text-gray-500">PDF, 1.2 MB</span>
+                  </div>
+                  <Download className="ml-auto text-gray-300 group-hover:text-rub-green" size={18} />
+                </a>
+                <a href="#" className="flex items-center gap-3 p-4 bg-white border border-gray-200 rounded hover:bg-gray-50 transition group">
+                  <FileText className="text-gray-400 group-hover:text-rub-blue" size={24} />
+                  <div>
+                    <span className="block font-bold text-gray-700 group-hover:text-rub-blue">Studienverlaufsplan</span>
+                    <span className="text-xs text-gray-500">PDF, 150 KB</span>
+                  </div>
+                  <Download className="ml-auto text-gray-300 group-hover:text-rub-green" size={18} />
+                </a>
               </div>
             </div>
 
           </div>
 
-          {/* Sidebar Links */}
-          <div className="space-y-6">
-            <div className="bg-gray-100 p-6 rounded-lg">
-              <h3 className="font-bold text-rub-blue mb-4">Wichtige Dokumente</h3>
-              <ul className="space-y-3">
-                <li>
-                  <Link to="#" className="text-gray-700 hover:text-rub-blue hover:underline text-sm flex items-center gap-2">
-                    <Book size={16} /> Studienordnung B.A. (PDF)
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#" className="text-gray-700 hover:text-rub-blue hover:underline text-sm flex items-center gap-2">
-                    <Book size={16} /> Modulhandbuch (PDF)
-                  </Link>
-                </li>
-                <li>
-                  <Link to="#" className="text-gray-700 hover:text-rub-blue hover:underline text-sm flex items-center gap-2">
-                    <Book size={16} /> Laufzettel (PDF)
-                  </Link>
-                </li>
-              </ul>
+          {/* Sidebar */}
+          <div className="space-y-8">
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="font-bold text-rub-blue mb-4">Studienfachberatung</h3>
+              <div className="space-y-4 text-sm">
+                <div>
+                  <p className="font-semibold">Allgemeine Beratung</p>
+                  <a href="mailto:studienberatung-romanistik@rub.de" className="text-rub-green hover:underline">studienberatung-romanistik@rub.de</a>
+                </div>
+                <div>
+                  <p className="font-semibold">Sprechstunden</p>
+                  <p className="text-gray-600">Mo 10-12 Uhr, Do 14-16 Uhr</p>
+                  <p className="text-gray-600">Raum GB 7/34</p>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-rub-green/10 p-6 rounded-lg border border-rub-green/20">
-              <h3 className="font-bold text-rub-green mb-2">Studienberatung</h3>
-              <p className="text-sm text-gray-700 mb-4">
-                Haben Sie Fragen zum Studienverlauf oder zur Modulwahl? Nutzen Sie unsere offene Sprechstunde.
+            <div className="bg-rub-blue text-white p-6 rounded-lg">
+              <h3 className="font-bold mb-4">Bewerbung</h3>
+              <p className="text-sm mb-4">
+                Die Einschreibung erfolgt zentral über das Studierendensekretariat der RUB. Bitte beachten Sie die Fristen.
               </p>
-              <Link to="/kontakt" className="text-sm font-bold text-rub-blue hover:underline">
-                Zur Kontaktseite →
-              </Link>
+              <a href="#" className="inline-block bg-rub-green text-white px-4 py-2 rounded text-sm font-bold hover:bg-white hover:text-rub-green transition">
+                Zur Online-Einschreibung
+              </a>
             </div>
           </div>
 
