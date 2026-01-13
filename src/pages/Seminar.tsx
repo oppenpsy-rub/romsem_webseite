@@ -61,13 +61,15 @@ const Seminar = () => {
           <h2 className="text-3xl font-bold text-rub-blue mb-8 border-b border-gray-200 pb-2">Professuren</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {professors.map((prof, index) => (
-              <div key={index} className="bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col items-center text-center">
-                <img src={prof.img} alt={prof.name} className="w-24 h-24 rounded-full object-cover mb-4 border-2 border-rub-green" />
-                <h3 className="font-bold text-lg text-rub-blue mb-2">{prof.name}</h3>
+              <div key={index} className="bg-white rounded shadow-sm hover:shadow-lg transition group border-t-4 border-rub-blue p-6 flex flex-col items-center text-center h-full">
+                <div className="relative mb-4">
+                   <img src={prof.img} alt={prof.name} className="w-24 h-24 rounded-full object-cover border-2 border-gray-100 group-hover:border-rub-green transition" />
+                </div>
+                <h3 className="font-bold text-lg text-rub-blue mb-2 group-hover:text-rub-green transition">{prof.name}</h3>
                 <p className="text-sm text-gray-600 mb-4 flex-grow">{prof.role}</p>
-                <div className="flex gap-3">
-                  <button className="text-gray-400 hover:text-rub-blue"><Mail size={18} /></button>
-                  <button className="text-gray-400 hover:text-rub-blue"><Globe size={18} /></button>
+                <div className="flex gap-3 mt-auto">
+                  <button className="text-gray-400 hover:text-rub-blue transition"><Mail size={18} /></button>
+                  <button className="text-gray-400 hover:text-rub-blue transition"><Globe size={18} /></button>
                 </div>
               </div>
             ))}

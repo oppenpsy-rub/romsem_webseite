@@ -39,28 +39,62 @@ const Forschung = () => {
             </div>
 
             <div>
-              <h2 className="text-2xl font-bold text-rub-blue mb-6 border-b border-gray-200 pb-2">Projekte & Kooperationen</h2>
-              <div className="bg-gray-50 rounded-xl p-6 space-y-6">
-                <div className="flex gap-4 items-start">
-                  <div className="bg-white p-3 rounded-full shadow-sm text-rub-blue">
-                    <Globe size={24} />
+              <h2 className="text-2xl font-bold text-rub-blue mb-6 border-b border-gray-200 pb-2">Zeitschriften & Publikationen</h2>
+              <p className="text-gray-600 mb-6">
+                Das Romanische Seminar ist maßgeblich an der Herausgabe renommierter Fachzeitschriften beteiligt. 
+                Hier finden Sie eine Übersicht unserer wichtigsten Publikationsorgane.
+              </p>
+              
+              <div className="space-y-6">
+                {/* Journal 1 */}
+                <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex flex-col md:flex-row gap-6">
+                  <div className="w-full md:w-32 h-32 bg-gray-100 flex items-center justify-center text-rub-blue font-bold text-xl shrink-0 rounded">
+                    HeLix
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg text-rub-blue">Alfried-Krupp Schülerlabor</h3>
-                    <p className="text-gray-600">
-                      Schnittstelle zwischen Schule und Universität. Wir bieten Projekte für Schülerinnen und Schüler an, um sie für romanistische Themen zu begeistern.
+                    <h3 className="text-xl font-bold text-rub-blue mb-2">HeLix – Dossiers zur romanischen Literaturwissenschaft</h3>
+                    <p className="text-gray-600 text-sm mb-3">
+                      Eine gesamtromanistische Online-Zeitschrift, die Beiträge zu literatur- und kulturwissenschaftlichen Themen versammelt. 
+                      HeLix ist Peer-Reviewed und Open Access.
                     </p>
+                    <div className="flex gap-4">
+                      <a href="#" className="text-rub-green text-sm font-bold hover:underline">Zur Zeitschrift</a>
+                      <a href="#" className="text-gray-500 text-sm hover:text-rub-blue">Aktuelles Heft</a>
+                    </div>
                   </div>
                 </div>
-                <div className="flex gap-4 items-start">
-                  <div className="bg-white p-3 rounded-full shadow-sm text-rub-blue">
-                    <Archive size={24} />
+
+                {/* Journal 2 */}
+                <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex flex-col md:flex-row gap-6">
+                  <div className="w-full md:w-32 h-32 bg-gray-100 flex items-center justify-center text-rub-blue font-bold text-xl shrink-0 rounded text-center p-2">
+                    LJB
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg text-rub-blue">Fachzeitschriften</h3>
-                    <p className="text-gray-600">
-                      Mitherausgabe renommierter Publikationen wie des "Romanistischen Jahrbuchs" und der Online-Zeitschrift "HeLix".
+                    <h3 className="text-xl font-bold text-rub-blue mb-2">Literaturwissenschaftliches Jahrbuch</h3>
+                    <p className="text-gray-600 text-sm mb-3">
+                      Herausgegeben im Auftrag der Görres-Gesellschaft. Das Jahrbuch bietet einen Überblick über neue Forschungsergebnisse 
+                      in der Germanistik, Anglistik und Romanistik. Mitherausgeberin: Prof. Dr. Susanne A. Friede.
                     </p>
+                    <div className="flex gap-4">
+                      <a href="#" className="text-rub-green text-sm font-bold hover:underline">Webseite des Verlags</a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Journal 3 */}
+                <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200 flex flex-col md:flex-row gap-6">
+                  <div className="w-full md:w-32 h-32 bg-gray-100 flex items-center justify-center text-rub-blue font-bold text-xl shrink-0 rounded">
+                    metaphorik
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-rub-blue mb-2">metaphorik.de</h3>
+                    <p className="text-gray-600 text-sm mb-3">
+                      Online-Zeitschrift zur Metaphorik und Metonymie. Forum für die Diskussion theoretischer und empirischer Fragen 
+                      der Bildsprache in Sprache, Literatur und Medien.
+                    </p>
+                    <div className="flex gap-4">
+                      <a href="#" className="text-rub-green text-sm font-bold hover:underline">Zur Zeitschrift</a>
+                    </div>
                   </div>
                 </div>
               </div>

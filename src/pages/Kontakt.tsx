@@ -20,7 +20,7 @@ const Kontakt = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-2xl font-bold text-rub-blue mb-6 border-b border-gray-200 pb-2">Anschrift</h2>
-              <div className="bg-white p-6 rounded-lg shadow-sm flex items-start gap-4">
+              <div className="bg-white p-6 rounded shadow-sm border-t-4 border-rub-blue flex items-start gap-4">
                 <MapPin className="text-rub-green flex-shrink-0" size={24} />
                 <div>
                   <p className="font-bold text-gray-800">Ruhr-Universität Bochum</p>
