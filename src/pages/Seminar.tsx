@@ -1,5 +1,6 @@
 import React from 'react';
-import { User, Mail, Globe, Library } from 'lucide-react';
+import { User, Mail, Globe, Library, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const professors = [
   {
