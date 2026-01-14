@@ -34,10 +34,12 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 bg-rub-blue text-white flex items-center justify-center font-bold text-2xl rounded group-hover:bg-rub-green transition-colors">
-              R
-            </div>
-            <div className="flex flex-col">
+            <img
+              src="https://www.romanistik.ruhr-uni-bochum.de/romsem/mam/images/logo_romsem.png"
+              alt="Logo Romanisches Seminar"
+              className="h-12 w-auto object-contain"
+            />
+            <div className="hidden sm:flex flex-col">
               <span className="font-bold text-xl text-rub-blue leading-none">Romanisches Seminar</span>
               <span className="text-sm text-gray-600">Fakultät für Philologie</span>
             </div>
